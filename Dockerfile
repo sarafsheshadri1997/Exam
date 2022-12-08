@@ -1,5 +1,3 @@
-FROM python
-
-ADD M_D.py .
-
-CMD [ "python", "./M-D.py"]
+FROM python  
+COPY . /src  
+CMD ["python", "/src/M-D.py"]
